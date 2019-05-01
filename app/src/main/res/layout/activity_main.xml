@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.activity.MainActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_main"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_state"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/statexml"
+            android:text="@string/tab_menu_state" />
+
+        <RadioButton
+            android:id="@+id/rb_control"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/controlxml"
+            android:text="@string/tab_menu_control" />
+
+        <RadioButton
+            android:id="@+id/rb_center"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/centerxml"
+            android:text="@string/tab_menu_center" />
+
+        <RadioButton
+            android:id="@+id/rb_service"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/servicexml"
+            android:text="@string/tab_menu_service" />
+
+    </RadioGroup>
+
+
+
+</RelativeLayout>

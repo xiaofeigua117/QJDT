@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="#c5d8ef"
+        android:paddingLeft="40dp"
+        android:text="餐厅灯光设置"
+        android:textColor="#a000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/dialog_sl_linear">
+
+        <TextView
+            android:id="@+id/cl_tv_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="餐厅主灯设置"
+            android:textColor="#a000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cl_tv_crank"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/cl_tv_set"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/dialog_sl_tvty"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="1级"
+            android:textColor="#a000"
+            android:textSize="45dp"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/cl_btn_czopen"
+            style="@style/buttonStyle"
+            android:layout_alignTop="@id/cl_tv_crank"
+            android:layout_marginLeft="80dp"
+            android:text="开启" />
+
+        <Button
+            android:id="@+id/cl_btn_czclose"
+            style="@style/buttonStyle"
+            android:layout_alignBottom="@id/cl_tv_crank"
+            android:layout_marginLeft="80dp"
+            android:text="关闭" />
+
+        <Button
+            android:id="@+id/cl_btn_clightj"
+            style="@style/buttonStyle"
+
+            android:layout_alignTop="@id/cl_tv_crank"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@id/cl_tv_crank"
+            android:text="亮度+" />
+
+        <Button
+            android:id="@+id/cl_btn_clightjj"
+            style="@style/buttonStyle"
+            android:layout_alignBottom="@id/cl_tv_crank"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@id/cl_tv_crank"
+            android:text="亮度-" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/dialog_sl_linearx">
+
+        <TextView
+            android:id="@+id/cl_tv_rank1"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/dialog_sl_tvty"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="6级"
+            android:textColor="#a000"
+            android:textSize="45dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/cl_tv_yset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:text="厨房灯光"
+            android:textColor="#a000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/cl_btn_cyopen"
+            style="@style/buttonStyle"
+            android:layout_below="@id/cl_tv_yset"
+            android:layout_marginLeft="80dp"
+            android:text="开启" />
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/cl_btn_cyclose"
+            style="@style/buttonStyle"
+            android:layout_below="@id/cl_btn_cyopen"
+            android:layout_marginLeft="80dp"
+            android:text="关闭" />
+
+
+
+
+        <TextView
+            android:id="@+id/cl_tv_tset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="筒灯设置"
+            android:textColor="#a000"
+            android:textSize="25sp"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@id/cl_tv_rank1"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:layout_marginTop="30dp"
+            android:id="@+id/cl_btn_ctopen"
+            style="@style/buttonStyle"
+            android:layout_below="@id/cl_tv_tset"
+
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@id/cl_tv_rank1"
+            android:text="开启" />
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/cl_btn_ctclose"
+            style="@style/buttonStyle"
+            android:layout_below="@id/cl_btn_ctopen"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@id/cl_tv_rank1"
+            android:text="关闭" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

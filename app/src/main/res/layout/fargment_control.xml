@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="控制中心"
+            android:textColor="#535353"
+            android:textSize="34dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#f3f8fe" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:text="通风控制"
+                android:textSize="25dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/fan1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/cloud_big" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <Button
+
+                    android:id="@+id/fan_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/button_key"
+                    android:onClick="onClick"
+                    android:text="低档"
+                    android:textSize="25sp" />
+                <Button
+                    android:id="@+id/fan_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@id/fan_open"
+                    android:background="@drawable/button_key"
+                    android:onClick="onClick"
+                    android:text="定时"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/fan2"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/cloud_small" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <Button
+
+                    android:id="@+id/fan_open2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/button_key"
+                    android:onClick="onClick"
+                    android:text="开启"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/fan_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@id/fan_open2"
+                    android:background="@drawable/button_key"
+                    android:onClick="onClick"
+                    android:text="定时"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="7dp"
+            android:layout_height="fill_parent"
+            android:background="#f3f8fe" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:text="照明控制"
+                android:textSize="25dp"
+
+                />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/light" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp">
+
+                <Button
+
+                    android:id="@+id/light1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/btn_circle"
+                    android:text="客厅"
+                    android:onClick="onClick"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/light2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@id/light1"
+                    android:onClick="onClick"
+                    android:background="@drawable/btn_circle"
+                    android:text="餐厅"
+                    android:textSize="25sp"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp">
+
+                <Button
+
+                    android:id="@+id/light3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/btn_circle"
+                    android:onClick="onClick"
+                    android:text="公卫"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/light4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@id/light3"
+                    android:background="@drawable/btn_circle"
+                    android:onClick="onClick"
+                    android:text="设置"
+                    android:textSize="25sp"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="7dp"
+            android:layout_height="fill_parent"
+            android:background="#f3f8fe" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:text="门窗控制"
+                android:textSize="25dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/window"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/window0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp">
+
+                <Button
+
+                    android:id="@+id/window_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:onClick="onClick"
+                    android:background="@drawable/button_key"
+                    android:text="开启"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/window_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@id/window_open"
+                    android:background="@drawable/button_key"
+                    android:text="关闭"
+                    android:onClick="onClick"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/curtain"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/curtain_open" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp">
+
+                <Button
+
+                    android:id="@+id/curtain_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/button_key"
+                    android:onClick="onClick"
+                    android:text="开启"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/curtain_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@id/curtain_open"
+                    android:background="@drawable/button_key"
+                    android:onClick="onClick"
+                    android:text="关闭"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="7dp"
+            android:layout_height="fill_parent"
+            android:background="#f3f8fe" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:orientation="vertical"
+
+            >
+
+            <ImageButton
+                android:id="@+id/model"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="40dp"
+                android:onClick="onClick"
+                android:background="@drawable/mm1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="10dp"
+                android:text="模式设置"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/prevent"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="45dp"
+                android:onClick="onClick"
+                android:background="@drawable/mm2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="10dp"
+                android:text="防打扰"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/temperature"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="45dp"
+                android:onClick="onClick"
+                android:background="@drawable/mm3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="10dp"
+                android:text="温度调节"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/control"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="45dp"
+                android:onClick="onClick"
+                android:background="@drawable/mm4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="10dp"
+                android:text="电器控制"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

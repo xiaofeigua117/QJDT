@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="#c5d8ef"
+        android:paddingLeft="40dp"
+        android:text="客厅灯光设置"
+        android:textColor="#a000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/dialog_sl_linear">
+
+        <TextView
+            android:id="@+id/sl_tv_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="主灯光设置"
+            android:textColor="#a000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sl_tv_rank"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/dialog_sl_tvty"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="1级"
+            android:textColor="#a000"
+            android:textSize="45dp"
+            android:textStyle="bold"
+
+            android:layout_below="@+id/sl_tv_set"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/sl_btn_zuopen"
+            style="@style/buttonStyle"
+            android:layout_alignTop="@id/sl_tv_rank"
+            android:layout_marginLeft="80dp"
+            android:text="开启" />
+
+        <Button
+            android:id="@+id/sl_btn_zuclose"
+            style="@style/buttonStyle"
+            android:layout_alignBottom="@id/sl_tv_rank"
+            android:layout_marginLeft="80dp"
+            android:text="关闭" />
+
+        <Button
+            android:id="@+id/sl_btn_lightj"
+            style="@style/buttonStyle"
+
+            android:layout_alignTop="@id/sl_tv_rank"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@id/sl_tv_rank"
+            android:text="亮度+" />
+
+        <Button
+            android:id="@+id/sl_btn_lightjj"
+            style="@style/buttonStyle"
+            android:layout_alignBottom="@id/sl_tv_rank"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@id/sl_tv_rank"
+            android:text="亮度-" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/dialog_sl_linearx">
+
+        <TextView
+            android:id="@+id/sl_tv_rank1"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/dialog_sl_tvty"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="6级"
+            android:textColor="#a000"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+
+            />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/sl_tv_mset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:text="门厅设置"
+            android:textColor="#a000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sl_btn_mopen"
+            style="@style/buttonStyle"
+            android:layout_marginLeft="80dp"
+            android:text="开启"
+            android:layout_alignBaseline="@+id/sl_btn_ztopen"
+            android:layout_alignBottom="@+id/sl_btn_ztopen"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/sl_btn_mclose"
+            style="@style/buttonStyle"
+            android:layout_marginLeft="80dp"
+            android:text="关闭"
+            android:layout_alignBaseline="@+id/sl_btn_ztclose"
+            android:layout_alignBottom="@+id/sl_btn_ztclose"
+            android:layout_alignStart="@+id/sl_tv_mset" />
+
+
+
+
+        <TextView
+            android:id="@+id/sl_tv_yset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:text="阳台设置"
+            android:textColor="#a000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sl_btn_zyopen"
+            style="@style/buttonStyle"
+            android:layout_below="@id/sl_tv_yset"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:text="开启" />
+
+        <Button
+            android:id="@+id/sl_btn_zyclose"
+            style="@style/buttonStyle"
+            android:layout_below="@id/sl_btn_zyopen"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:text="关闭" />
+
+
+
+
+        <TextView
+            android:id="@+id/sl_tv_tset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/sl_tv_rank1"
+            android:text="筒灯设置"
+            android:textColor="#a000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/sl_btn_ztopen"
+            style="@style/buttonStyle"
+            android:layout_below="@id/sl_tv_yset"
+            android:layout_marginLeft="55dp"
+
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/sl_tv_rank1"
+            android:text="开启" />
+
+        <Button
+            android:id="@+id/sl_btn_ztclose"
+            style="@style/buttonStyle"
+            android:layout_below="@id/sl_btn_zyopen"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/sl_tv_rank1"
+            android:text="关闭" />
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
